@@ -2,23 +2,45 @@
 
 ## Table of Contents
 
-1. [Core Fundamentals](#core-fundamentals)
-2. [Requirements & Capacity Estimation](#requirements--capacity-estimation)
-3. [Key Trade-offs & CAP Theorem](#key-trade-offs--cap-theorem)
-4. [Load Balancing & Caching](#load-balancing--caching)
-5. [Databases: SQL vs NoSQL](#databases-sql-vs-nosql)
-6. [Database Replication & Sharding](#database-replication--sharding)
-7. [Microservices vs Monolith](#microservices-vs-monolith)
-8. [Design Patterns & Architecture](#design-patterns--architecture)
-9. [Message Queues & Event-Driven Architecture](#message-queues--event-driven-architecture)
-10. [Consistent Hashing](#consistent-hashing)
-11. [CDN & Performance Optimization](#cdn--performance-optimization)
-12. [API Design: REST vs GraphQL vs gRPC](#api-design-rest-vs-graphql-vs-grpc)
-13. [Distributed Systems Basics](#distributed-systems-basics)
+### Core Concepts
+1. [Core Fundamentals](#1-core-fundamentals)
+2. [Requirements & Capacity Estimation](#2-requirements--capacity-estimation)
+3. [Key Trade-offs & CAP Theorem](#3-key-trade-offs--cap-theorem)
+4. [Load Balancing & Caching](#4-load-balancing--caching)
+5. [Databases: SQL vs NoSQL](#5-databases-sql-vs-nosql)
+6. [Database Replication & Sharding](#6-database-replication--sharding)
+7. [Microservices vs Monolith](#7-microservices-vs-monolith)
+8. [Design Patterns & Architecture](#8-design-patterns--architecture)
+9. [Message Queues & Event-Driven Architecture](#9-message-queues--event-driven-architecture)
+10. [Consistent Hashing](#10-consistent-hashing)
+11. [CDN & Performance Optimization](#11-cdn--performance-optimization)
+12. [API Design: REST vs GraphQL vs gRPC](#12-api-design-rest-vs-graphql-vs-grpc)
+13. [Distributed Systems Basics](#13-distributed-systems-basics)
+
+### Case Studies
+14. [Design URL Shortener (TinyURL)](#11-design-url-shortener-tinyurl)
+15. [Design WhatsApp/Chat System](#12-design-whatsappchat-system)
+16. [Design Twitter/News Feed](#13-design-twitternews-feed)
+17. [Design Uber/Ride-Hailing](#14-design-uberride-hailing)
+18. [Design Instagram/Photo Sharing](#15-design-instagramphoto-sharing)
+19. [Design YouTube/Netflix (Video Streaming)](#16-design-youtubenetflix-video-streaming)
+20. [Design Amazon/E-commerce](#17-design-amazone-commerce)
+21. [Design Dropbox/Google Drive](#18-design-dropboxgoogle-drive-file-storage)
+22. [Design Parking Lot System](#19-design-parking-lot-system)
+23. [Design Vending Machine](#20-design-vending-machine)
+24. [Design Library Management System](#21-design-library-management-system)
+25. [Design Chess Game](#22-design-chess-game)
+26. [Design Restaurant Booking System](#23-design-restaurant-booking-system)
+27. [Design Airline Reservation System](#24-design-airline-reservation-system)
+28. [Design Hotel Booking System](#25-design-hotel-booking-system)
+
+### Bonus
+29. [Quick Prep Questions](#bonus-quick-prep-questions)
+30. [Interview Tips](#tips-for-system-design-interviews)
 
 ---
 
-## 1. Core Fundamentals
+## 1. Core Fundamentals {#1-core-fundamentals}
 
 ### 1.1 What are the key principles of system design?
 
@@ -85,7 +107,7 @@ Amazon S3 replicates data across multiple data centers. If one center fails, dat
 
 ---
 
-## 2. Requirements & Capacity Estimation
+## 2. Requirements & Capacity Estimation {#2-requirements--capacity-estimation}
 
 ### 2.1 How do you gather functional and non-functional requirements?
 
@@ -155,7 +177,7 @@ During New Year's Eve, Twitter experiences 10x normal traffic. Auto-scaling adds
 
 ---
 
-## 3. Key Trade-offs & CAP Theorem
+## 3. Key Trade-offs & CAP Theorem {#3-key-trade-offs--cap-theorem}
 
 ### 3.1 What is the CAP Theorem?
 
@@ -208,7 +230,7 @@ Choose based on use case:
 
 ---
 
-## 4. Load Balancing & Caching
+## 4. Load Balancing & Caching {#4-load-balancing--caching}
 
 ### 4.1 What is load balancing and why is it needed?
 
@@ -275,7 +297,7 @@ When a user updates their profile on Twitter, the cache is invalidated so follow
 
 ---
 
-## 5. Databases: SQL vs NoSQL
+## 5. Databases: SQL vs NoSQL {#5-databases-sql-vs-nosql}
 
 ### 5.1 What is the difference between SQL and NoSQL databases?
 
@@ -345,7 +367,7 @@ In a social media database, store user's follower count directly instead of coun
 
 ---
 
-## 6. Database Replication & Sharding
+## 6. Database Replication & Sharding {#6-database-replication--sharding}
 
 ### 6.1 What is database replication?
 
@@ -412,7 +434,7 @@ If you shard by city and one city becomes very popular, that shard becomes overl
 
 ---
 
-## 7. Microservices vs Monolith
+## 7. Microservices vs Monolith {#7-microservices-vs-monolith}
 
 ### 7.1 What is a monolithic architecture?
 
@@ -488,7 +510,7 @@ If Payment Service is down, entire Uber ride booking fails (cascading failure).
 
 ---
 
-## 8. Design Patterns & Architecture
+## 8. Design Patterns & Architecture {#8-design-patterns--architecture}
 
 ### 8.1 What is the API Gateway pattern?
 
@@ -550,7 +572,7 @@ E-commerce: Write model updates inventory, Read model serves product listings (o
 
 ---
 
-## 9. Message Queues & Event-Driven Architecture
+## 9. Message Queues & Event-Driven Architecture {#9-message-queues--event-driven-architecture}
 
 ### 9.1 What is a message queue?
 
@@ -608,7 +630,7 @@ Kafka partitions ensure messages from same user processed in order. Idempotent I
 
 ---
 
-## 10. Consistent Hashing
+## 10. Consistent Hashing {#10-consistent-hashing}
 
 ### 10.1 What problem does consistent hashing solve?
 
@@ -689,7 +711,7 @@ Cassandra cluster: Adding node redistributes ~25% of keys. Removing node redistr
 
 ---
 
-## 11. CDN & Performance Optimization
+## 11. CDN & Performance Optimization {#11-cdn--performance-optimization}
 
 ### 11.1 How does a CDN work and when would you use it?
 
@@ -796,7 +818,7 @@ E-commerce database:
 
 ---
 
-## 12. API Design: REST vs GraphQL vs gRPC
+## 12. API Design: REST vs GraphQL vs gRPC {#12-api-design-rest-vs-graphql-vs-grpc}
 
 ### 12.1 Compare REST, GraphQL, and gRPC with use cases
 
@@ -936,7 +958,7 @@ Server stores key, returns same result if duplicate request received.
 
 ---
 
-## 13. Distributed Systems Basics
+## 13. Distributed Systems Basics {#13-distributed-systems-basics}
 
 ### 13.1 What are the challenges in distributed systems?
 
@@ -2175,7 +2197,7 @@ This comprehensive section covers the most frequently asked system design questi
 
 ## Top 15 Most Asked System Design Questions (Detailed Case Studies)
 
-### 11. Design URL Shortener (TinyURL)
+### 11. Design URL Shortener (TinyURL) {#11-design-url-shortener-tinyurl}
 
 #### 11.1 How would you generate unique short URLs?
 
@@ -2413,7 +2435,7 @@ Cleanup job (daily at 2 AM):
 TinyURL: URLs expire after 30 days of inactivity. Cleanup runs nightly.
 
 
-### 12. Design WhatsApp/Chat System
+### 12. Design WhatsApp/Chat System {#12-design-whatsappchat-system}
 
 #### 12.1 How do you handle real-time message delivery?
 
@@ -2704,7 +2726,7 @@ Cache Layer (Redis)
 WhatsApp: 100+ million concurrent connections across 50+ data centers globally.
 
 
-### 13. Design Twitter/News Feed
+### 13. Design Twitter/News Feed {#13-design-twitternews-feed}
 
 #### 13.1 How would you generate a user's timeline/news feed?
 
@@ -2926,7 +2948,7 @@ Twitter: Uses WebSocket for real-time feed updates. New tweets appear instantly.
 Twitter: Stores follow relationships in MySQL. Caches in Redis for fast lookups.
 
 
-### 14. Design Uber/Ride-Hailing
+### 14. Design Uber/Ride-Hailing {#14-design-uberride-hailing}
 
 #### 14.1 How do you match riders with nearby drivers?
 
@@ -3165,7 +3187,7 @@ Uber: During peak hours, scales to 100K+ servers. Maintains 99.99% availability.
 Uber: Maintains 1M+ available drivers at peak hours. Matches riders in < 10 seconds.
 
 
-### 15. Design Instagram/Photo Sharing
+### 15. Design Instagram/Photo Sharing {#15-design-instagramphoto-sharing}
 
 #### 15.1 How would you store and serve photos efficiently?
 
@@ -3433,7 +3455,7 @@ Instagram: 2B+ monthly active users. Handles 95K+ requests per second.
 Instagram: Elasticsearch indexes 100B+ photos. Searches return results in < 200ms.
 
 
-### 16. Design YouTube/Netflix (Video Streaming)
+### 16. Design YouTube/Netflix (Video Streaming) {#16-design-youtubenetflix-video-streaming}
 
 #### 16.1 How would you store large video files?
 
@@ -3718,7 +3740,7 @@ YouTube: Content ID system detects 98% of copyrighted content. 10K+ human modera
 This comprehensive guide covers 13 core system design concepts and 6 detailed case studies with practical implementations, real-world examples, and scalability strategies for interview preparation.
 
 
-### 17. Design Amazon/E-commerce
+### 17. Design Amazon/E-commerce {#17-design-amazone-commerce}
 
 #### 17.1 How would you design product catalog at scale?
 
@@ -3977,7 +3999,7 @@ Amazon: Elasticsearch indexes 350M+ products. Searches return results in < 100ms
 Amazon: 100M+ reviews. Average rating calculated from 1000+ reviews per product.
 
 
-### 18. Design Dropbox/Google Drive (File Storage)
+### 18. Design Dropbox/Google Drive (File Storage) {#18-design-dropboxgoogle-drive-file-storage}
 
 #### 18.1 How would you store and organize user files?
 
@@ -4214,7 +4236,7 @@ Dropbox: Uses delta sync. Syncs only changed portions of files.
 Google Drive: 99.99% availability. 3x replication across regions. Daily backups.
 
 
-### 19. Design Parking Lot System
+### 19. Design Parking Lot System {#19-design-parking-lot-system}
 
 #### 19.1 How would you design the parking spot allocation?
 
@@ -4460,7 +4482,7 @@ Parking ticket: Shows entry 10:00 AM, exit 2:30 PM, duration 4.5 hours, fee $22.
 Peak hours (9-10 AM, 5-6 PM): 95% occupancy. Queue 50+ vehicles. Dynamic pricing: $8/hour.
 
 
-### 20. Design Vending Machine
+### 20. Design Vending Machine {#20-design-vending-machine}
 
 #### 20.1 How would you design the state machine for vending machine?
 
@@ -4705,7 +4727,7 @@ Transaction log: 2024-01-15 10:30 AM, Coke, $2.50, Card, Success.
 Maintenance: Refill Coke (20 units), Sprite (15 units), coins ($100). Update system.
 
 
-### 21. Design Library Management System
+### 21. Design Library Management System {#21-design-library-management-system}
 
 #### 21.1 How would you design book catalog and search?
 
@@ -4944,7 +4966,7 @@ Member receives email: "Book due tomorrow". SMS: "Book overdue, fine $2.50".
 Inventory: 100K books. Quarterly count. 50 lost books/year. 100 damaged books/year.
 
 
-### 22. Design Chess Game
+### 22. Design Chess Game {#22-design-chess-game}
 
 #### 22.1 How would you design the game board and pieces?
 
@@ -5217,7 +5239,7 @@ Game replay: Step through 40 moves. Engine shows best move was Nf3, player playe
 This comprehensive guide now covers 13 core system design concepts and 10 detailed case studies (sections 11-22) with practical implementations, real-world examples, and scalability strategies for complete interview preparation.
 
 
-### 23. Design Restaurant Booking System
+### 23. Design Restaurant Booking System {#23-design-restaurant-booking-system}
 
 #### 23.1 How would you design table availability and booking?
 
@@ -5454,7 +5476,7 @@ Search: Italian restaurants, 5km radius, 4+ stars, available 7:00 PM for 4 peopl
 Friday 7:00 PM: 100% booked. Waitlist: 20 customers. Suggest 8:30 PM or Saturday.
 
 
-### 24. Design Airline Reservation System
+### 24. Design Airline Reservation System {#24-design-airline-reservation-system}
 
 #### 24.1 How would you design flight search (origin, destination, date)?
 
@@ -5695,7 +5717,7 @@ Multi-city: LAX-SFO $200 + SFO-NYC $300 + NYC-LAX $250 = $750 total.
 Search query → Query Amadeus GDS → Get 50 flights → Display to user.
 
 
-### 25. Design Hotel Booking System
+### 25. Design Hotel Booking System {#25-design-hotel-booking-system}
 
 #### 25.1 How would you design hotel search with filters?
 
@@ -5945,7 +5967,7 @@ Gold member: 10% discount + room upgrade. Earn 450 points on $450 booking.
 
 ---
 
-## Bonus: Quick Prep Questions
+## Bonus: Quick Prep Questions {#bonus-quick-prep-questions}
 
 ### Estimation Questions
 
@@ -6109,7 +6131,7 @@ Gold member: 10% discount + room upgrade. Earn 450 points on $450 booking.
 
 ---
 
-## Tips for System Design Interviews
+## Tips for System Design Interviews {#tips-for-system-design-interviews}
 
 ### 1. Always start with requirements clarification
 - Ask about functional requirements
